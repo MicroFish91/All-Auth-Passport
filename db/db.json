@@ -1,0 +1,13 @@
+{
+    "userData": [
+        {
+            "name": "Joe",
+            "password": "test2",
+            "email": "email",
+            "googleID": null,
+            "facebookID": null,
+            "twitterID": null,
+            "githubID": null
+        }
+    ]
+}
