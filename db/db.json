@@ -2,8 +2,17 @@
     "userData": [
         {
             "name": "Joe",
-            "password": "test2",
-            "email": "email",
+            "password": "$2a$08$wwoeSx/OUDKIG73Q9WrmYuvWYOgro2meZosVS0SVy8Szy9B1VBZbC",
+            "email": "nothing@gmail.com",
+            "googleID": null,
+            "facebookID": null,
+            "twitterID": null,
+            "githubID": null
+        },
+        {
+            "name": "Matt",
+            "password": "$2a$08$LxnJVfd/55XTTt70L1cFU.0XsEjroTSTAZ.GvB84KPTXlbkultnNq",
+            "email": "test@gmail.com",
             "googleID": null,
             "facebookID": null,
             "twitterID": null,
