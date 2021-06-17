@@ -33,7 +33,7 @@ we are able to move onto the Google strategy callback function found in the conf
 step 7.
 */
 router.get('/google/redirect', passport.authenticate('google'), (req, res) => {
-  res.send(`You've reached the callback URI`);
+  res.redirect('/protected');
 });
 
 module.exports = router;

@@ -1,14 +1,15 @@
 const router = require('express').Router();
 const passport = require('passport');
 
-// 1. All-Auth - Flows Start Here
+// 1. ALL AUTH - Flows Start Here
 router.get('/login', (req, res) => {
     res.render('login', { message: null });
 });
 
-// General
+// ALL-AUTH - FINISH
 router.get('/logout', (req, res) => {
-    res.send('logging out');
+    req.logout();
+    res.redirect('/');
 });
 
 /*  LOCAL STRATEGY - STEP 2:
