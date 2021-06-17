@@ -4,6 +4,12 @@ The home page features a list of login methods that are available for demo.  The
 when a valid login has been provided.  Normal registration and login is provided via a passport local strategy while 
 other OAuth strategies are used when demoing the remaining third party login methods.
 
+![Homepage](/images/Homepage.png)
+
+## How to Run
+
+npm install, npm start
+
 ## General Breakdown
 Refer to the following flowchart to see the login/authorization flow.  As you peruse the code base you will be able
 to view notes and comments that outline the steps in this flow so that you can more easily digest all the steps
