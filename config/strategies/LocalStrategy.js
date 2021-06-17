@@ -16,7 +16,7 @@ module.exports = function() {
         await bcrypt.compare(password, user.password, (err, response) => {
           if(response){
             // PW: Match
-            done(null, { email: user.email });
+            done(null, { id: user.id });
           } else {
             // PW: No Match
             done(null, false, { message: 'Incorrect password.' });
@@ -30,20 +30,4 @@ module.exports = function() {
       done(err, false, { message: 'Server error, please try again later.'});
     }
   }));
-
-  passport.serializeUser((user, done) => {
-    console.log('serializingUser');
-    done(null, user.email);
-  });
-
-  passport.deserializeUser(async (email, done) => {
-    console.log('deserializingUser');
-    try {
-      const user = await getUser('none', email);
-      done(null, user);
-    }
-    catch (err) {
-      done(err, false, { message: 'User could not be retrieved.'});
-    }
-  });
 }

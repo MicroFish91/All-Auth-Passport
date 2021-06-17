@@ -3,12 +3,10 @@ const debug = require('debug')('app:startup');  // set env 'export DEBUG='app:st
 const express = require('express');
 const morgan = require('morgan');
 const passport = require('passport');
+const auth = require('./routes/auth');
 const home = require('./routes/');
-const login = require('./routes/login');
-const googleAuth = require('./routes/googleAuth');
 const protected = require('./routes/protected');
-const registration = require('./routes/registration');
-const env = require('./config/env');
+const keys = require('./config/keys');
 
 const app = express();
 
@@ -22,7 +20,7 @@ if (app.get('env') === 'development') {
 // Cookie-session
 app.use(cookieSession({
     name: 'session',
-    keys: [env.PP_SECRET], 
+    keys: [keys.cookieSession.cookieSecret], 
     maxAge: 2 * 24  * 60 * 60 * 1000
 }))  
 
@@ -30,6 +28,8 @@ app.use(cookieSession({
 app.use(passport.initialize());
 app.use(passport.session());
 require('./config/strategies/LocalStrategy')();
+require('./config/strategies/GoogleStrategy')();
+require('./config/strategies/passportSerializer')();
 
 // View Engine
 app.set('view engine', 'ejs');
@@ -40,13 +40,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 // Routes
-app.use('/auth', login);
-app.use('/auth', googleAuth);
-app.use('/auth', registration);
+app.use('/auth', auth);
 app.use('/protected', protected);
 app.use('/', home);
 
-const port = process.env.PORT || 3000;
+const port = keys.PORT || 3000;
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}...`);

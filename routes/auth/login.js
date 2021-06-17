@@ -1,14 +1,21 @@
 const router = require('express').Router();
 const passport = require('passport');
 
+// 1. All-Auth - Flows Start Here
 router.get('/login', (req, res) => {
     res.render('login', { message: null });
 });
 
+// General
 router.get('/logout', (req, res) => {
     res.send('logging out');
 });
 
+/*  LOCAL STRATEGY - STEP 2:
+First we enter login information which brings us to our
+login post route, where we have passport authenticate middleware
+which routes us to our Local Strategy in the config folder               
+*/
 router.post('/login', function(req, res, next) {
     passport.authenticate('local', 
         function(err, user, info) {
@@ -31,7 +38,7 @@ module.exports = router;
 // Simpler alternative, but lacks ability to easily handle passing of err / info message
 
 // router.get('/loginFailed', (req, res) => {
-    //     res.render('login', { message: null });
+    //     res.render('login', { message: 'Login Failed' });
     // });
 
 // router.post('/login', passport.authenticate('local', { failureRedirect: '/loginFailed' }), (req, res) => {

@@ -31,3 +31,16 @@ module.exports.getUser = function(authType, authID) {
     }
   });
 };
+
+module.exports.getUserByPk = function(primaryKey) {
+  return new Promise((resolve, reject) => {
+    try {
+      const userIndex = db.getIndex("/userData", primaryKey);
+      const user = db.getData(`/userData[${userIndex}]`);
+      (userIndex !== -1) ? resolve(user) : resolve(null);
+    }
+    catch (err) {
+      reject(err);
+    }
+  });
+};

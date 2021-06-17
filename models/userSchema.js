@@ -1,8 +1,11 @@
+const { v4: uuidv4 } = require('uuid');
+
 module.exports.createUserSchema = function (authType, authID, name, email, password){
   return {
-    name,
+    id: uuidv4(),
+    name: (name) ? name: null,
     password: (password) ? password : null,
-    email,
+    email: (email) ? email: null,
     googleID: (authType === "google") ? authID : null,
     facebookID: (authType === "facebook") ? authID : null,
     twitterID: (authType === "twitter") ? authID : null,

@@ -1,19 +1,31 @@
 {
     "userData": [
         {
-            "name": "Joe",
-            "password": "$2a$08$wwoeSx/OUDKIG73Q9WrmYuvWYOgro2meZosVS0SVy8Szy9B1VBZbC",
-            "email": "nothing@gmail.com",
+            "id": "0a8c472b-ab72-4d4f-a225-68900e575cfc",
+            "name": "Matt",
+            "password": "$2a$08$TtpD2VBHef.70iPjrtPNCe8VsyPwSFezV4/blJ2ziovp8dUPK.xKi",
+            "email": "test@gmail.com",
             "googleID": null,
             "facebookID": null,
             "twitterID": null,
             "githubID": null
         },
         {
-            "name": "Matt",
-            "password": "$2a$08$LxnJVfd/55XTTt70L1cFU.0XsEjroTSTAZ.GvB84KPTXlbkultnNq",
-            "email": "test@gmail.com",
+            "id": "c2b10ec5-2cb6-4aa4-89cc-6e827c34030a",
+            "name": "Joe",
+            "password": "$2a$08$nFLpMtJ2kZpMhMNFeNVM4.s1.WGM04YOyK.SRWFh/9VbuDyIHR/xa",
+            "email": "something@gmail.com",
             "googleID": null,
+            "facebookID": null,
+            "twitterID": null,
+            "githubID": null
+        },
+        {
+            "id": "cd1803ac-532e-403c-a3de-214218403c92",
+            "name": "Matthew Fisher",
+            "password": null,
+            "email": null,
+            "googleID": "114236048543757525202",
             "facebookID": null,
             "twitterID": null,
             "githubID": null
