@@ -14,7 +14,7 @@ router.get('/logout', (req, res) => {
 
 /*  LOCAL STRATEGY - STEP 2:
 First we enter login information which brings us to our
-login post route, where we have passport authenticate middleware
+login post route where we have passport authenticate middleware
 which routes us to our Local Strategy in the config folder               
 */
 router.post('/login', function(req, res, next) {

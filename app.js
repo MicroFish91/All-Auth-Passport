@@ -27,9 +27,7 @@ app.use(cookieSession({
 // Passport Init
 app.use(passport.initialize());
 app.use(passport.session());
-require('./config/strategies/LocalStrategy')();
-require('./config/strategies/GoogleStrategy')();
-require('./config/strategies/passportSerializer')();
+require('./config/strategies')();
 
 // View Engine
 app.set('view engine', 'ejs');

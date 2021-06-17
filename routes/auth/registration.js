@@ -2,12 +2,12 @@ const bcrypt = require('bcryptjs');
 const router = require('express').Router();
 const { addUser, getUser } = require('../../db/jsonDB');
 
-// For Local Login
+// Registering for Local Strategy Login
 router.get('/registration', (req, res) => {
   res.render('registration');
 });
 
-// Emulates posting to a db
+// Emulates posting to a db for Local Strategy Registration
 router.post('/registration', async (req, res) => {
   try {
     const { username, password, email } = req.body;

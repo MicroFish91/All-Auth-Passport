@@ -39,7 +39,7 @@ module.exports = function() {
           }
         }
         catch(err){
-          done(err, false, { message: 'Server error, please try again later.'});
+          done(err, false);
         }
       
     })
