@@ -1,6 +1,11 @@
 require('dotenv').config();
 
 module.exports = {
+  // https://developers.facebook.com/apps/
+  facebook: {
+    clientID: process.env.FACEBOOK_CLIENT_ID,
+    clientSecret: process.env.FACEBOOK_CLIENT_SECRET
+  },
   // https://console.developers.google.com
   google: {
     clientID: process.env.GOOGLE_CLIENT_ID,
