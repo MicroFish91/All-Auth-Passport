@@ -11,6 +11,11 @@ module.exports = {
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET
   },
+  // https://www.linkedin.com/developers/apps
+  linkedin: {
+    clientID: process.env.LINKEDIN_CLIENT_ID,
+    clientSecret: process.env.LINKEDIN_CLIENT_SECRET
+  },
   cookieSession: {
     cookieSecret: process.env.COOKIE_SECRET
   },

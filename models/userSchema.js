@@ -9,7 +9,8 @@ module.exports.createUserSchema = function (authType, authID, name, email, passw
     googleID: (authType === "google") ? authID : null,
     facebookID: (authType === "facebook") ? authID : null,
     twitterID: (authType === "twitter") ? authID : null,
-    githubID: (authType === "github") ? authID : null
+    githubID: (authType === "github") ? authID : null,
+    linkedinID: (authType === "linkedin") ? authID : null
   };
 }
 
@@ -19,7 +20,8 @@ module.exports.findUserSchema = function (authType, authID){
     googleID: (authType === "google") ? authID : null,
     facebookID: (authType === "facebook") ? authID : null,
     twitterID: (authType === "twitter") ? authID : null,
-    githubID: (authType === "github") ? authID : null
+    githubID: (authType === "github") ? authID : null,
+    linkedinID: (authType === "linkedin") ? authID : null
   };
 
   (authType !== 'none') && delete user['email'];
@@ -27,6 +29,7 @@ module.exports.findUserSchema = function (authType, authID){
   (authType !== 'facebook') && delete user['facebookID'];
   (authType !== 'twitter') && delete user['twitterID'];
   (authType !== 'github') && delete user['githubID'];
+  (authType !== 'linkedin') && delete user['linkedinID'];
 
   return user;
 }

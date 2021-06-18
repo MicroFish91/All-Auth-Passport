@@ -39,6 +39,27 @@
             "facebookID": null,
             "twitterID": null,
             "githubID": "40250218"
+        },
+        {
+            "id": "99baf2ea-22df-44df-bd8c-b5136d4cf17d",
+            "name": "Matthew Fisher",
+            "password": null,
+            "email": null,
+            "googleID": null,
+            "facebookID": null,
+            "twitterID": null,
+            "githubID": null
+        },
+        {
+            "id": "dd09ecad-6bd9-4f26-a9f0-4989606f2b5f",
+            "name": "Matthew Fisher",
+            "password": null,
+            "email": null,
+            "googleID": null,
+            "facebookID": null,
+            "twitterID": null,
+            "githubID": null,
+            "linkedinID": "WJE-FyyX-O"
         }
     ]
 }
