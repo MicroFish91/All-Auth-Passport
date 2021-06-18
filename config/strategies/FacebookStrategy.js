@@ -10,7 +10,7 @@ module.exports = function() {
       clientID: keys.facebook.clientID,
       clientSecret: keys.facebook.clientSecret
     }, async (accessToken, refreshToken, profile, done) => {
-      console.log('Running GitHub strategy (cb)...');
+      console.log('Running Facebook strategy (cb)...');
       try {
         const existingUser = await getUser('facebook', profile.id);
         if(existingUser !== null){
