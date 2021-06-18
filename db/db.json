@@ -29,6 +29,16 @@
             "facebookID": null,
             "twitterID": null,
             "githubID": null
+        },
+        {
+            "id": "7fde8179-c1c0-4f21-b9f8-fb4bd295007b",
+            "name": "Matthew Fisher",
+            "password": null,
+            "email": null,
+            "googleID": null,
+            "facebookID": null,
+            "twitterID": null,
+            "githubID": "40250218"
         }
     ]
 }
