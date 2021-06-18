@@ -10,6 +10,8 @@ other OAuth strategies are used when demoing the remaining third party login met
 
 npm install, npm start
 
+You will need to add your own credentials as environment variables, see config/keys.js for the complete list being imported.
+
 ## General Breakdown
 Refer to the following flowchart to see the login/authorization flow.  As you peruse the code base you will be able
 to view notes and comments that outline the steps in this flow so that you can more easily digest all the steps
