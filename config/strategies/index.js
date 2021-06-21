@@ -3,6 +3,7 @@ const GitHubStrategy = require('./GitHubStrategy');
 const GoogleStrategy = require('./GoogleStrategy');
 const LinkedInStrategy = require('./LinkedInStrategy');
 const LocalStrategy = require('./LocalStrategy');
+const TwitterStrategy = require('./TwitterStrategy');
 const passportSerializer = require('./passportSerializer');
 
 module.exports = function() {
@@ -11,5 +12,6 @@ module.exports = function() {
   GoogleStrategy();
   LinkedInStrategy();
   LocalStrategy();
+  TwitterStrategy();
   passportSerializer();
 }

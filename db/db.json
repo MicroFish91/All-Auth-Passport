@@ -1,74 +1,13 @@
 {
     "userData": [
         {
-            "id": "0a8c472b-ab72-4d4f-a225-68900e575cfc",
+            "id": "3509e6a1-de01-42a3-ae97-f698a7fa368d",
             "name": "Matt",
-            "password": "$2a$08$TtpD2VBHef.70iPjrtPNCe8VsyPwSFezV4/blJ2ziovp8dUPK.xKi",
-            "email": "test@gmail.com",
-            "googleID": null,
-            "facebookID": null,
-            "twitterID": null,
-            "githubID": null
-        },
-        {
-            "id": "c2b10ec5-2cb6-4aa4-89cc-6e827c34030a",
-            "name": "Joe",
-            "password": "$2a$08$nFLpMtJ2kZpMhMNFeNVM4.s1.WGM04YOyK.SRWFh/9VbuDyIHR/xa",
-            "email": "something@gmail.com",
-            "googleID": null,
-            "facebookID": null,
-            "twitterID": null,
-            "githubID": null
-        },
-        {
-            "id": "cd1803ac-532e-403c-a3de-214218403c92",
-            "name": "Matthew Fisher",
-            "password": null,
-            "email": null,
-            "googleID": "114236048543757525202",
-            "facebookID": null,
-            "twitterID": null,
-            "githubID": null
-        },
-        {
-            "id": "7fde8179-c1c0-4f21-b9f8-fb4bd295007b",
-            "name": "Matthew Fisher",
             "password": null,
             "email": null,
             "googleID": null,
             "facebookID": null,
-            "twitterID": null,
-            "githubID": "40250218"
-        },
-        {
-            "id": "99baf2ea-22df-44df-bd8c-b5136d4cf17d",
-            "name": "Matthew Fisher",
-            "password": null,
-            "email": null,
-            "googleID": null,
-            "facebookID": null,
-            "twitterID": null,
-            "githubID": null
-        },
-        {
-            "id": "dd09ecad-6bd9-4f26-a9f0-4989606f2b5f",
-            "name": "Matthew Fisher",
-            "password": null,
-            "email": null,
-            "googleID": null,
-            "facebookID": null,
-            "twitterID": null,
-            "githubID": null,
-            "linkedinID": "WJE-FyyX-O"
-        },
-        {
-            "id": "efcc793c-cd9f-4e57-b38a-1d374690afb6",
-            "name": "Matt Fisher",
-            "password": null,
-            "email": null,
-            "googleID": null,
-            "facebookID": "10159594112503559",
-            "twitterID": null,
+            "twitterID": "1405794203544608769",
             "githubID": null,
             "linkedinID": null
         }

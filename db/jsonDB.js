@@ -23,8 +23,12 @@ module.exports.getUser = function(authType, authID) {
     try {
       const userSchema = findUserSchema(authType, authID);
       const userIndex = db.getIndex("/userData", Object.values(userSchema)[0], Object.keys(userSchema)[0]);
-      const user = db.getData(`/userData[${userIndex}]`);
-      (userIndex !== -1) ? resolve(user) : resolve(null);
+      if(userIndex !== -1){
+        const user = db.getData(`/userData[${userIndex}]`);
+        resolve(user);
+      } else {
+        resolve(null);
+      }
     }
     catch (err) {
       reject(err);
