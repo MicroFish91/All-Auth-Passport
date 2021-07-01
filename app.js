@@ -6,7 +6,6 @@ const passport = require('passport');
 const auth = require('./routes/auth');
 const home = require('./routes/');
 const protected = require('./routes/protected');
-const keys = require('./config/keys');
 
 const app = express();
 
@@ -42,7 +41,7 @@ app.use('/auth', auth);
 app.use('/protected', protected);
 app.use('/', home);
 
-const port = keys.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}...`);

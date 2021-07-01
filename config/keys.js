@@ -28,8 +28,7 @@ module.exports = {
   },
   cookieSession: {
     cookieSecret: process.env.COOKIE_SECRET
-  },
-  PORT: process.env.PORT
+  }
 };
 
 
